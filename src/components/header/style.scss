@@ -11,3 +11,28 @@
 .header-transition {
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out
 }
+
+.menu-transition {
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #fff;
+}
+
+.menu-visible {
+  max-height: 600px;
+  opacity: 1;
+  border-bottom: 1px solid #ccc;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.menu-hidden {
+  max-height: 0;
+  opacity: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
